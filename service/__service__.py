@@ -1,3 +1,4 @@
+from abc import abstractmethod
 from nis import match
 from unittest import case
 
@@ -6,6 +7,7 @@ class Service():
     def __init__(self,service) -> None:
         self.service = service
         pass
+    @abstractmethod
     def getHashTagStats(self):
         pass
 
